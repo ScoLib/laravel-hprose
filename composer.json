@@ -1,0 +1,52 @@
+{
+    "name": "scolib/laravel-hprose",
+    "type": "library",
+    "description": "laravel hprose",
+    "keywords": [
+        "ScoLib",
+        "laravel-hprose"
+    ],
+    "homepage": "https://github.com/ScoLib/laravel-hprose",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "klgd",
+            "email": "slice1213@gmail.com",
+            "homepage": "https://github.com/klgd",
+            "role": "Developer"
+        }
+    ],
+    "require": {
+        "php": "~7.1",
+        "hprose/hprose": "^2.0",
+        "illuminate/support": "^5.5"
+    },
+    "require-dev": {
+        "laravel/framework": "^5.5",
+        "phpunit/phpunit": ">=7.0",
+        "squizlabs/php_codesniffer": "^3.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "Sco\\LaravelHprose\\": "src"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Sco\\LaravelHprose\\": "tests"
+        }
+    },
+    "scripts": {
+        "test": "phpunit",
+        "check-style": "phpcs src tests",
+        "fix-style": "phpcbf src tests"
+    },
+    "extra": {
+        "branch-alias": {
+            "dev-master": "1.0-dev"
+        }
+    },
+    "config": {
+        "sort-packages": true
+    }
+}
